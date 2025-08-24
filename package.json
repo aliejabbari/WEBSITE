@@ -2,7 +2,7 @@
   "name": "personal-blog",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://aliejabbari.com",
+  "homepage": "https://aliejabbari.github.io/WEBSITE",
   "dependencies": {
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
