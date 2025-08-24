@@ -593,6 +593,23 @@
   text-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
 }
 
+.project-achievement {
+  margin-top: 15px;
+  padding: 12px;
+  background: rgba(212, 175, 55, 0.1);
+  border-left: 3px solid #D4AF37;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #E8E8E8;
+  font-family: 'Crimson Text', serif;
+}
+
+.project-achievement strong {
+  color: #D4AF37;
+  font-weight: 600;
+}
+
 /* CV Section */
 .cv-section {
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);

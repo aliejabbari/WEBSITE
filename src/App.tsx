@@ -33,28 +33,46 @@ const App: React.FC = () => {
 
   const projects = [
     {
-      title: "Quantum Neural Network",
-      description: "Advanced AI system using quantum computing principles",
-      tech: ["Python", "TensorFlow", "Qiskit", "React"],
-      year: "2024"
+      title: "Advanced Multimodal Image Matching System",
+      description: "Developed a novel deep learning system for high-precision matching of RGB and Infrared images, outperforming traditional methods in challenging conditions. Utilized CUDA and TensorRT for real-time performance.",
+      tech: ["Deep Learning", "CUDA", "TensorRT", "RGB-IR Fusion"],
+      year: "2023-Present",
+      achievement: "Improved matching accuracy by over 29% compared to SuperPoint-Lightglue."
     },
     {
-      title: "Blockchain Analytics Platform",
-      description: "Real-time blockchain data visualization and analysis",
-      tech: ["Node.js", "Web3.js", "D3.js", "PostgreSQL"],
-      year: "2023"
+      title: "Airborne Object Detection and Tracking System",
+      description: "Implemented a comprehensive YOLOv5-based object detection and tracking system for autonomous drone collision avoidance. Developed for the Airborne Object Tracking Challenge, focusing on Sense and Avoid (SAA) capabilities using monocular vision.",
+      tech: ["YOLOv5", "PyTorch", "OpenCV", "Docker", "TensorRT", "NVIDIA Jetson"],
+      year: "2024",
+      achievement: "Real-time object detection, multi-object tracking, collision prediction, containerized deployment."
     },
     {
-      title: "IoT Smart Home System",
-      description: "Intelligent home automation with machine learning",
-      tech: ["Arduino", "Python", "MQTT", "Flutter"],
-      year: "2023"
+      title: "EfficientLoFTR ONNX Optimization",
+      description: "Optimized EfficientLoFTR (Efficient Local Feature Transform) model for ONNX deployment, achieving faster inference speeds while maintaining high accuracy in feature matching tasks. Implemented both indoor and outdoor variants.",
+      tech: ["PyTorch", "ONNX", "EfficientLoFTR", "Kornia", "PyTorch Lightning", "CUDA"],
+      year: "2024",
+      achievement: "Reduced inference time by 40% while maintaining 95%+ matching accuracy on ScanNet and MegaDepth datasets."
     },
     {
-      title: "Cryptographic Protocol",
-      description: "Zero-knowledge proof implementation for privacy",
-      tech: ["Rust", "Elliptic Curves", "WebAssembly", "TypeScript"],
-      year: "2022"
+      title: "OMR (Optical Mark Recognition) System",
+      description: "Developed an automated answer sheet processing system using computer vision techniques. Implemented robust bubble detection, grid recognition, and answer extraction with high accuracy across various sheet formats.",
+      tech: ["OpenCV", "NumPy", "Computer Vision", "Image Processing", "Contour Detection"],
+      year: "2024",
+      achievement: "Automatic sheet alignment, bubble detection, answer clustering, and high-accuracy parsing."
+    },
+    {
+      title: "NLP Text Processing and Analysis",
+      description: "Implemented comprehensive text processing pipeline for SMS spam detection and analysis. Developed XML parsing, text preprocessing, and machine learning classification systems.",
+      tech: ["Pandas", "XML Processing", "Scikit-learn", "Machine Learning"],
+      year: "2024",
+      achievement: "Processed 5,572 SMS messages with automated spam classification."
+    },
+    {
+      title: "Low-Light Image Enhancement",
+      description: "Engineered a deep learning pipeline to dramatically enhance image quality in low-light conditions, focusing on noise reduction and detail preservation. Implemented and compared multiple state-of-the-art architectures.",
+      tech: ["Deep Learning", "Image Enhancement", "Noise Reduction", "PyTorch"],
+      year: "2024",
+      achievement: "Achieved significant visual and metric improvements (PSNR/SSIM) on standard datasets."
     }
   ];
 
@@ -376,6 +394,11 @@ const App: React.FC = () => {
                       <span key={techIndex} className="tech-tag">{tech}</span>
                     ))}
                   </div>
+                  {project.achievement && (
+                    <div className="project-achievement">
+                      <strong>Achievement:</strong> {project.achievement}
+                    </div>
+                  )}
                 </motion.div>
               ))}
             </div>
@@ -516,8 +539,8 @@ const App: React.FC = () => {
                   <p className="gpa">GPA: 16/20</p>
                   <div className="thesis-info">
                     <h5>Thesis: Design of an Online BCI System for Rehabilitation Robot Control via Motor Imagery</h5>
-                    <p>Developed deep learning models with attention mechanisms for real-time EEG signal classification</p>
-                    <p>Supervisors: Dr. Ali Ghazi-Zahedi Ahsaei & Dr. Mohammad Bagher Shamsollahi</p>
+                    <p>Developed deep learning models with attention mechanisms for real-time classification of EEG signals, specifically for lower limb motor imagery (e.g., knee flexion/extension). Created a novel dataset to address data scarcity in this domain.</p>
+                    <p><strong>Supervisors:</strong> Dr. Ali Ghazi-Zahedi Ahsaei & Dr. Mohammad Bagher Shamsollahi</p>
                   </div>
                 </motion.div>
                 
@@ -535,7 +558,8 @@ const App: React.FC = () => {
                   <p className="gpa">GPA: 18/20</p>
                   <div className="thesis-info">
                     <h5>Thesis: Brain-Computer Interface System Based on Common Spatial Patterns (CSP)</h5>
-                    <p>Key areas: Signal Processing, Machine Learning, Medical Device Design</p>
+                    <p><strong>Key areas:</strong> Signal Processing, Machine Learning, Medical Device Design, Signal Decomposition Techniques</p>
+                    <p><strong>Technologies:</strong> MATLAB, Python, Scikit-learn, CSP Algorithms</p>
                   </div>
                 </motion.div>
               </motion.div>
@@ -566,6 +590,7 @@ const App: React.FC = () => {
                       <span className="skill-tag expert">JavaScript/TypeScript (Expert)</span>
                       <span className="skill-tag proficient">SQL (Proficient)</span>
                       <span className="skill-tag proficient">Shell Scripting (Proficient)</span>
+                      <span className="skill-tag proficient">HTML/CSS (Proficient)</span>
                     </div>
                   </motion.div>
                   
@@ -581,9 +606,11 @@ const App: React.FC = () => {
                       <span className="skill-tag">PyTorch</span>
                       <span className="skill-tag">TensorFlow</span>
                       <span className="skill-tag">Keras</span>
+                      <span className="skill-tag">PyTorch Lightning</span>
                       <span className="skill-tag">LLM Integration</span>
                       <span className="skill-tag">RAG</span>
                       <span className="skill-tag">LangChain</span>
+                      <span className="skill-tag">Prompt Engineering</span>
                     </div>
                   </motion.div>
                   
