@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  background: #0a0a0a;
+  color: #e8e8e8;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a4a4a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6a6a6a;
+}
+
+/* Selection styling */
+::selection {
+  background: #e8e8e8;
+  color: #0a0a0a;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+p {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+/* ASCII animation container */
+.ascii-container {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  white-space: pre;
+  overflow: hidden;
+  user-select: none;
+}
+
+/* Vintage paper effect */
+.vintage-paper {
+  background: linear-gradient(135deg, #f4f1e8 0%, #e8e0d0 100%);
+  border: 1px solid #d4c4a8;
+  box-shadow: 
+    0 4px 8px rgba(0,0,0,0.1),
+    inset 0 1px 0 rgba(255,255,255,0.8);
+  border-radius: 2px;
+}
+
+/* High-tech glow effects */
+.tech-glow {
+  text-shadow: 
+    0 0 5px rgba(0,255,255,0.5),
+    0 0 10px rgba(0,255,255,0.3),
+    0 0 15px rgba(0,255,255,0.1);
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .ascii-container {
+    font-size: 8px;
+    line-height: 1;
+  }
+}
